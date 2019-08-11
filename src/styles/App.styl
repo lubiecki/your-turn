@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800,900&display=swap&subset=latin-ext')
+
+body
+  background #2E4057
+  color #FFFFFF
+  display flex
+  justify-content center
+  align-items center
+  width 100vw
+  height 100vh
+  margin 0
+  padding 0
+  font-family 'Montserrat', sans-serif
+
+.app
+  .title
+    font-weight 900
+    font-size 50px
+    display flex
+    justify-content center
+    .you
+      color #F18F01
+  .inputs
+    font-weight 800
+    display flex
+    justify-content center
+    align-items center
+    font-size 20px
+    .container
+      margin 0 10px
+      input[type=radio]
+        visibility hidden
+        width 0
+        height 0
+        z-index -100
+        position absolute
+        & + label
+          color #bbbbbb
+          cursor pointer
+        &:checked + label
+          color #FFF
+          font-size 140%
+      .add-new
+        border none
+        background none
+        color #bbbbbb
+        font-size 36px
+        cursor pointer
